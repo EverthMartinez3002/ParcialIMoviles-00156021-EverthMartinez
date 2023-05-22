@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/foodsfragment">
+
+    <fragment
+        android:id="@+id/foodsfragment"
+        android:name="com.example.parcialimoviles_00156021_everthmartinez.ui.food.foods.foodsfragment"
+        android:label="foodsfragment" >
+        <action
+            android:id="@+id/action_foodsfragment_to_food_fragment"
+            app:destination="@id/food_fragment" />
+        <action
+            android:id="@+id/action_foodsfragment_to_newfood_fragment"
+            app:destination="@id/newfood_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/food_fragment"
+        android:name="com.example.parcialimoviles_00156021_everthmartinez.ui.food.food_fragment"
+        android:label="food_fragment" />
+    <fragment
+        android:id="@+id/newfood_fragment"
+        android:name="com.example.parcialimoviles_00156021_everthmartinez.ui.food.newfood.newfood_fragment"
+        android:label="newfood_fragment" />
+</navigation>

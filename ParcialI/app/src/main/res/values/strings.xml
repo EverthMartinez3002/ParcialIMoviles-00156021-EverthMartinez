@@ -2,4 +2,14 @@
     <string name="app_name">ParcialIMoviles-00156021-EverthMartinez</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="billboard">Foods</string>
+    <string name="PupusasText">Pupusas\n</string>
+    <string name="Type">Tipica</string>
+    <string name="PupusasCalification">10</string>
+    <string name="descriptionPupusas">Buena comida tipica</string>
+    <string name="newFood">New food</string>
+    <string name="name">Name</string>
+    <string name="TypeHint">Type</string>
+    <string name="descriptionHint">Description</string>
+    <string name="qualificationHint">Qualification</string>
 </resources>

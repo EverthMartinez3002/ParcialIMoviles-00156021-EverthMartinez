@@ -5,26 +5,39 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.activityViewModels
 import com.example.parcialimoviles_00156021_everthmartinez.R
+import com.example.parcialimoviles_00156021_everthmartinez.databinding.FragmentFoodFragmentBinding
+import com.example.parcialimoviles_00156021_everthmartinez.databinding.FragmentFoodsfragmentBinding
+import com.example.parcialimoviles_00156021_everthmartinez.ui.food.viewmodel.FoodViewModel
 
-/**
- * A simple [Fragment] subclass.
- * Use the [food_fragment.newInstance] factory method to
- * create an instance of this fragment.
- */
+
 class food_fragment : Fragment() {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
+    private val foodViewModel: FoodViewModel by activityViewModels {
+        FoodViewModel.Factory
     }
+
+    private lateinit var binding: FragmentFoodFragmentBinding
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_food_fragment, container, false)
+        binding = FragmentFoodFragmentBinding.inflate(inflater, container, false)
+        return binding.root
     }
-    
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        setViewModel()
+    }
+
+    private fun setViewModel() {
+        binding.viewmodel = foodViewModel
+    }
+
 }
