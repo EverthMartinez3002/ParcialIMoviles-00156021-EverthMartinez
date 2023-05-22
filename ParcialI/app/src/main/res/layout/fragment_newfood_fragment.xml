@@ -127,13 +127,13 @@
 
             <Button
                 android:id="@+id/submit_button"
-                android:onClick="@{() -> viewmodel.createMovie()}"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/mediumGap"
                 android:backgroundTint="@color/buttonColor"
-                android:textColor="@color/black"
+                android:onClick="@{() -> viewmodel.createFood()}"
                 android:text="@string/submitButtonText"
+                android:textColor="@color/black"
                 app:layout_constraintEnd_toEndOf="@+id/CalificationTv"
                 app:layout_constraintStart_toStartOf="@+id/CalificationTv"
                 app:layout_constraintTop_toBottomOf="@+id/CalificationTv" />

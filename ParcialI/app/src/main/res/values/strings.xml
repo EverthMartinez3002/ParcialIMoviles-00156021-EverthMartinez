@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8" ?>
 <resources>
     <string name="app_name">ParcialIMoviles-00156021-EverthMartinez</string>
     <!-- TODO: Remove or change this placeholder text -->
@@ -10,6 +11,7 @@
     <string name="newFood">New food</string>
     <string name="name">Name</string>
     <string name="TypeHint">Type</string>
+    <string name="submitButtonText">Submit</string>
     <string name="descriptionHint">Description</string>
     <string name="qualificationHint">Qualification</string>
 </resources>
